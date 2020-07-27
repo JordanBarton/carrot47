@@ -8,7 +8,7 @@ from datetime import date
 
 
 
-engine = create_engine('postgresql://postgres:Spudsinhel1@localhost:5432/password_management')
+engine = create_engine('postgresql://XXXXXX:XXXXXX@localhost:5432/password_management')
 Session = sessionmaker(bind=engine)
 Base = declarative_base()
 
