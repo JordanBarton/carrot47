@@ -172,8 +172,8 @@ def get_jobs(URL):
 
 
 
-sql_username = "jordan"
-sql_password = "password"
+sql_username = "XXXXX"
+sql_password = "XXXXXX"
 login_url ='postgresql://{}:{}@localhost:5432/jobs'.format(sql_username,sql_password)
 engine = create_engine(login_url)      
 Session = sessionmaker(bind=engine)
