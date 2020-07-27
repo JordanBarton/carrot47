@@ -206,7 +206,7 @@ class JobDetails(Base):
 
 def searchjobtype(job):
     site = "https://www.indeed.co.uk/jobs?"
-    where = "&l=Manchester+M12&radius=15&start="
+    where = "&l=XXXXXXX+XXX&radius=15&start="
     URL = site+job+where+'0'
     page = requests.get(URL)
     soup = BeautifulSoup(page.content , 'html.parser')
