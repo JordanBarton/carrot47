@@ -1,0 +1,6 @@
+These are the python projects I've been working on since 05/2020 - 07/2020:
+Note that if you want to get some of these working you will have to make some changes:
+to get the sql programs working you will have to set up your own sql database as you dont have my username and password for obvious reasons
+to get platform zeros wokring you will need to create your own account for realtimetrains.api 
+to get the email notifier/texter working you will have to set up your own twilio account
+to get poker working you need to make a local AND onedrive directory containing all 52 poker cards as .jpg files
