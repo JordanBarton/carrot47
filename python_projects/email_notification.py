@@ -18,8 +18,8 @@ def main(*args):
     
     from twilio.rest import Client
 
-    account_sid = 'AC61c01b3475f3ee650e9f6873e4368fe4'
-    auth_token = '5ef76f1eb6f1807a9c0fcceb37f6333d'
+    account_sid = 'XXXXXXXXXXXXXX'
+    auth_token = 'XXXXXXXXXXXXXXXX'
     client = Client(account_sid , auth_token)
     
  
