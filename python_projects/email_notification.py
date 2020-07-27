@@ -23,8 +23,8 @@ def main(*args):
     client = Client(account_sid , auth_token)
     
  
-    message = client.messages.create(to = '+447825915787',
-                                     from_ = '+447401273046',
+    message = client.messages.create(to = '+44XXXXXXXXX',
+                                     from_ = '44+XXXXXXXXX',
                                      body = "code finished")
     
     
@@ -32,9 +32,9 @@ def main(*args):
     
     
 #----------------------------------------------
-    sender = 'jordansender.py@gmail.com'
-    password = "pythonpython"
-    reciever = 'jordan_barton97@hotmail.co.uk' 
+    sender = 'XXXXXXXX@gmail.com'
+    password = "XXXXX"
+    reciever = 'XXXXX@hotmail.co.uk' 
     
     bcc = ''
     end = len(args)
