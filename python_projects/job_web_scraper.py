@@ -264,4 +264,3 @@ for job in jobs:
 session.close()
 email_notification.main()
 
-#https://www.google.com/maps/dir/Seddon+St,+Levenshulme,+Manchester+M12+4GP/Altrincham
