@@ -32,7 +32,7 @@ def add_row(Object,Table):
 #'sqlite:///census.sqlite'
 #'sqlite:///:memory:'
 
-engine = create_engine('postgresql://postgres:Spudsinhel1@localhost:5432/actors')
+engine = create_engine('postgresql://XXXXXX:XXXXX@localhost:5432/actors')
 Session = sessionmaker(bind=engine)
 
 
