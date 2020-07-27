@@ -1,0 +1,12 @@
+This is code that I used during my Masters project: The code returns the optimal route to traverse all of the Wainwrights in the Lake district
+Travelling salesman problems have been attempting many times, and very efficient algorirthms now exist, but they require a cost matrix as an input
+Producing a cost matrix is the real challenge of this problem as you have to account for vertical movement, and the terrain.
+
+inputs: sattellite raster, height raster, river map, footpath map, peak locations map, buildings map
+
+1. creates a friction map 
+2. path finds via Dijkras between height and friction (uses GRASS, externally ran from R)
+3. creates a cost matrix 
+4. solves using concorde 
+5. produces route
+
