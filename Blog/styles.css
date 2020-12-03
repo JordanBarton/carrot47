@@ -1,0 +1,480 @@
+
+
+
+/* *************************************************************************************
+	One% CSS Grid - 12 Columns Fluid CSS Grid System
+	Why One% ? Let’s count ...
+		we have 12 columns (magic number divided by 2, 3, 4, 6)
+		for 12 columns we need 11 margins
+		so if we count margin 3%, then 3% * 11 margins = 33%
+		and if we count width of 1 column 5.5%, than 5.5% * 12 columns = 66%
+		in the end we have 33% + 66% = 99% aaand ???
+		1% is still here so that's the name - One%
+	2 starting options ? Let’s count a bit more ...
+		1200px - perfectly fits 1280 screens
+			12 columns
+			margin 3% / 36px (full-width)
+			col1 5.5% / 66px (full-width)
+		1000px - perfectly fits 1024 screens
+			12 columns
+			margin 3% / 30px (full-width)
+			col1 5.5% / 55px (full-width)
+*/
+ * {
+	box-sizing: border-box;
+ }
+
+ 
+ 
+ 
+/* *************************************************************************************
+ * Main container for all
+ */
+.page-container {
+	margin: 0 auto;
+	max-width: 1020px;
+}
+
+.row {
+	clear: both; /*removing any float*/
+	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
+}
+
+
+
+
+/* *************************************************************************************
+ * Common columns definitions
+ */
+.col {
+	float: left;
+	margin: 0 3% 0 0;
+}
+
+.last-col {
+	margin: 0;
+}
+
+.col1 { width: 5.5%; }
+.col2 { width: 14%; }
+.col3 { width: 22.5%; }
+.col4 { width: 31%; }
+.col6 { width: 48%; }
+.col5 { width: 39.5%; }
+.col7 { width: 56.5%; }
+.col8 { width: 65%; }
+.col9 { width: 73.5%; }
+.col10 { width: 82%; }
+.col11 { width: 90.5%; }
+.col12 { width: 99%; margin: 0; }
+
+
+
+
+
+/* *************************************************************************************
+ * Styles to show boxes
+ */
+.box {
+	
+	background: #CBCECE;
+	text-align: center;
+}
+
+
+/* *************************************************************************************
+ * custom styles
+ */
+
+
+/* Need to reset the browser margin so nav bar leaves no gap*/
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+
+
+
+
+
+
+/* desktops */
+@media only screen and (max-width : 2000px){
+
+
+#navBar{
+	background: #585B5B;
+	color: white;
+	position: fixed;
+	z-index: 1;
+	max-width:98%;
+	height:40px
+
+}
+
+.text{
+	color: white;
+
+}
+
+
+.navBarButton{
+	background: #585B5B;
+	height:40px;
+}
+
+.navBarButton:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+.searchBar:hover{
+	background-color: rgba(255,255,255,0.5);
+}
+
+.symbol{
+	display: none;
+}
+
+.searchBar{
+	background: #1D1E1E;
+	color: white;
+	height:40px;
+}
+
+#bannerPhoto{
+  max-width: 100%;
+  top: 40px;
+  align-content: center;
+  position: relative;
+
+}
+
+#profilePhoto{
+	max-width:15%;
+	align-content: center;
+	bottom: 50px;
+	position: relative;
+	border-radius: 10%;
+}
+
+
+.blogPhoto{
+	max-width: 80%;
+  	width: auto;
+  	height: auto;
+	margin: 20px 20px 20px 40px;
+	border-radius: 10%;
+	display: block;
+
+}
+
+
+#contactDetails{
+	background: #585B5B;
+	text-align: justify;
+}
+
+#mediaDetails{
+	float: right;
+	align-content: right;
+	background: #585B5B;
+
+}
+
+.blogPost{
+	border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
+	float:left;
+}
+
+.title{
+	margin-right:70%;
+	float:left;
+
+}
+
+.paragraph{
+	float:left;
+  	text-align: justify;
+  	text-justify: inter-word;
+  	font-size: 23px;
+}
+
+#footer{
+	background: #585B5B;
+	color: white;
+}
+
+#name{
+
+	align-content: center;
+	bottom: 50px;
+	position: relative;
+
+}
+
+
+}
+
+
+
+
+
+/*****************************************************************/
+
+
+
+
+/*tablets*/
+@media only screen and (max-width : 800px){
+
+
+
+#navBar{
+	width: 98%;
+	height: 40px;
+}
+
+.navBarButton{
+	height: 40px;
+	min-width: 40px;
+}
+
+.navBarButton:hover{
+}
+
+.text{
+	display:none;
+}
+
+.symbol{
+	display:inline;
+	font-size: 30px
+}
+
+.searchBar{
+	background: #1D1E1E;
+	color: white;
+	height:40px;
+}
+
+#bannerPhoto{
+  top: 40px;
+  align-content: center;
+  position: relative;
+}
+
+#profilePhoto{
+	max-width:20%;
+	align-content: center;
+	bottom: 40px;
+	position: relative;
+	border-radius: 10%;
+}
+
+
+.blogPhoto{
+	width:auto;
+	height:auto;
+	max-width:  200px;
+	max-height: 200px;
+	margin: 20px 20px 20px 0px;
+	border-radius: 10%;
+	display: block;
+	object-fit: cover;
+
+}
+
+
+#contactDetails{
+	float: left;
+	align-content: left;
+	background: #585B5B;
+
+}
+
+#mediaDetails{
+	float: right;
+	align-content: right;
+	background: #585B5B;
+
+}
+
+.blogPost{
+	border: 2px solid black;
+    padding: 10px 10px 10px 10px;
+	margin:  10px 10px 10px 10px;
+	float:left;
+}
+
+.paragraph{
+	float:left;
+  	text-align: justify;
+  	text-justify: inter-word;
+}
+
+.title{
+	margin-right:70%;
+}
+
+#footer{
+	background: #585B5B;
+	color: white;
+}
+
+#home{
+	font-size: 40px;
+}
+
+
+#name{
+
+	align-content: center;
+	bottom: 50px;
+	position: relative;
+	
+}
+
+}
+
+
+
+
+/*****************************************************************/
+
+
+
+
+/* phones */
+@media only screen and (max-width : 450px){
+
+
+#navBar{
+	/*width: 93.5%;*/
+	height: 40px;
+}
+.navBarButton{
+	height: 40px;
+	min-width: 40px;
+}
+
+.navBarButton:hover{
+}
+
+.text{
+	display:none;
+}
+
+.symbol{
+	display:inline;
+	font-size: 30px
+}
+
+.searchBar{
+	background: #1D1E1E;
+	color: white;
+	height:40px;
+}
+
+
+#bannerPhoto{
+  top: 40px;
+  align-content: center;
+  position: relative;
+}
+
+#profilePhoto{
+	max-width:20%;
+	align-content: center;
+	bottom: 40px;
+	position: relative;
+	border-radius: 10%;
+}
+
+
+
+
+.blogPost{
+	border: 2px solid black;
+    padding: 0px 0px 0px 0px;
+	margin:  0px 10px 10px 10px;
+	float:left;
+}
+
+.blogPhoto{
+	width:auto;
+	height:auto;
+	max-width:  150px;
+	max-height: 150px;
+	margin: 10px 10px 0px 10px;
+	border-radius: 10%;
+	display: inline;
+	object-fit: cover;
+
+}
+
+.photoContainer{
+	display:inline;
+	margin:0%;
+	width:100%;
+}
+
+.title{
+	float:none;
+	margin-right:0%;
+
+}
+
+
+.blogContainer{
+	display:inline;
+	margin:0%;
+	width:100%;
+	padding: 0px 10px 0px 10px;
+}
+
+.paragraph{
+  	text-align: justify;
+  	text-justify: inter-word;
+}
+
+
+
+#contactDetails{
+	text-align: justify;
+  	text-justify: inter-word;
+	background: #585B5B;
+}
+
+
+#mediaDetails{
+	float: right;
+	align-content: right;
+	background: #585B5B;
+
+}
+
+#home{
+	font-size: 40px;
+}
+
+
+#name{
+
+	align-content: center;
+	bottom: 50px;
+	position: relative;
+	
+}
+
+
+
+}
+
